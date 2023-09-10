@@ -1,0 +1,12 @@
+Mochila com capacidade C, sendo C > 0
+Cada item tem um peso Wi, sendo Wi > 0
+Cada item tem sua utilidade Ui, sendo Ui > 0
+Existe também o número de itens desse tipo Di, sendo Di > 0
+
+Usando a Heurística gulosa, ordenaremos usando a medida Ui/Wi
+
+Temos que coloca na mochila o máximo de itens de tipo 1, em seguida do tipo 2 e assim por diante... Até que não haja mais itens disponíveis ou espaço na mochila.
+
+Entrada:
+
+Ui Wi Di
