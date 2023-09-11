@@ -18,7 +18,7 @@ for item in lista_itens:
 #     indice += 1
 #     input_item = input()
 
-capacidade_mochila = 20
+capacidade_mochila = input()
 
 #insertion sort
 
