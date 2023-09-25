@@ -8,19 +8,26 @@ class Mar:
 
     def ler_entrada(self):
         while True:
-            linha = input()
-            if not linha:
+    
+            try:
+                linha = input()
+                if not linha:
+                    break
+                linha_aux = list(linha)
+                linha_int = []
+                for num in linha_aux:
+                    num = int(num)
+                    linha_int.append(num)
+    
+                if len(linha_int) > 0:  # Verifica se a lista de inteiros não está vazia
+                    self.mar.append(linha_int)
+                    self.colunas = len(linha_int)  # Atualiza o número de colunas
+                    self.linhas += 1
+
+            except EOFError:
                 break
-            linha_aux = list(linha)
-            linha_int = []
-            for num in linha_aux:
-                num = int(num)
-                linha_int.append(num)
 
-            self.mar.append(linha_int)
-            self.colunas += 1
-            self.linhas += 1
-
+        
     def encontrar_maior_ilha(self):
 
         if not self.mar:
