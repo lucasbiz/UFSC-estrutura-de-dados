@@ -62,7 +62,5 @@ class Mar:
 
 mar1 = Mar()
 mar1.ler_entrada()
-print(mar1.mar)
-print('-----------------')
 print(mar1.encontrar_maior_ilha())
 
