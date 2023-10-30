@@ -51,7 +51,7 @@ class Arvore:
         return esquerda + direita + node.valor
 
 
-expressao = 'A*B+C*D-E'
+expressao = input()
 arvore = Arvore()
 raiz = arvore.construir_arvore(expressao)
 pre_ordem = arvore.pre_ordem(raiz)
